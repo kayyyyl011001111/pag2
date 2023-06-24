@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create an Account</title>
+<style>
+    .container {
+      background-color: black;
+      width: 300px;
+      padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="checkbox"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+<h2 style="color: white;">Create an Account</h2>
+<form action="your-action-url" method="POST">
+<input type="text" id="username" name="username" placeholder="Username" required><br>
+<input type="text" id="firstname" name="firstname" placeholder="First Name" required><br>
+<input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br>
+<input type="email" id="email" name="email" placeholder="Email" required><br>
+<input type="submit" value="Sign Up"><br>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms" style="color: white;">I have read and agreed to the terms</label>
+</form>
+</div>
+</body>
+</html>
